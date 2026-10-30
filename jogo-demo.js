@@ -13,7 +13,6 @@ let nome = prompt("Qual é o nome do seu herói? ");
 let vida = 10;
 let veneno = 0;            // quantos passos o veneno ainda dura
 const inventario = [];
-
 console.log("");
 console.log(nome + ", o farol da costa apagou. Alguém precisa chegar lá antes do anoitecer.");
 
@@ -22,6 +21,7 @@ while (jogando) {
   if (veneno > 0) {
     vida = vida - 1;
     veneno = veneno - 1;
+
     console.log("O veneno arde. Vida: " + vida);
   }
   if (vida <= 0) {
